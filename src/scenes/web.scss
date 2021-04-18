@@ -1,0 +1,22 @@
+.contenedor__web--full{
+  display: flex;
+  .contenedor__menu{
+    position: fixed;
+    width: 330px;
+    height: 100%;
+  }
+  .contenedor__scenes{
+    padding: 30px 40px 30px 370px !important;
+    width: 100%;
+  }
+}
+.contenedor__reproductor--footer{
+  width: 100%;
+}
+@media (max-width: 768px){
+  .contenedor__web--full{
+    .contenedor__scenes{
+      padding: 20px 16px !important;
+    }
+  }
+}

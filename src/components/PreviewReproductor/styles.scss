@@ -1,0 +1,96 @@
+.contenedor__prevew--full {
+  display: flex;
+  .contenedor__preview--img {
+    width: 300px !important;
+    img {
+      width: 100%;
+    }
+  }
+  .contenedor__preview--descripcion {
+    width: 100%;
+    background-image: linear-gradient(to right bottom, #662323, #8f3d29, #b55c28, #d48121, #ebab12);
+    text-align: left;
+    padding: 40px 20px 22px 20px;
+    h4 {
+      text-align: left;
+      margin: 0px !important;
+    }
+    .contenedor__fans {
+      .artista {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #ffffff;
+      }
+      .fans {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 500;
+        color: #030000;
+        margin-left: 1rem;
+      }
+    }
+    .info__album {
+      font-size: 10px;
+      line-height: 16px;
+      font-weight: 400;
+      color: #ffffff;
+      text-align: left;
+    }
+    .contenedor__botones {
+      display: flex;
+      max-width: 220px;
+      justify-content: space-between;
+      margin-top: 1rem;
+      .enlace__deezer {
+        border-radius: 15px !important;
+        border: 2px solid #ff4d4f !important;
+        height: 32px;
+        line-height: 12px;
+        font-weight: 500;
+        color: #ffffff;
+        transition: all 0.5s ease;
+        width: 110px;
+        margin-left: 1rem;
+      }
+      .enlace__deezer:hover {
+        border: 2px solid #ffffff !important;
+        height: 32px;
+        line-height: 12px;
+        color: #ff4d4f;
+        background-color: #ffffff;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .info__album {
+    display: none;
+  }
+}
+@media (max-width: 968px) {
+  .contenedor__prevew--full {
+    display: block;
+    .contenedor__preview--img {
+      width: 100% !important;
+      img {
+        width: 100%;
+        object-fit: cover !important;
+        height: 200px;
+      }
+    }
+  }
+  .contenedor__botones {
+    display: block !important;
+    max-width: 110px !important;
+    justify-content: none !important;
+    margin: auto !important;
+    margin-top: 1rem;
+    .enlace__deezer {
+      margin-top: 1rem;
+      margin-left: 0rem !important;
+    }
+  }
+}

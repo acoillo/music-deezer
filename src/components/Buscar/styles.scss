@@ -1,0 +1,13 @@
+.input--full {
+  border-radius: 100px;
+  width: 100%;
+}
+.contenedor__header--buscar {
+  max-width: 524px;
+  div {
+    width: 100%;
+    .ant-select-selector {
+      border-radius: 100px !important;
+    }
+  }
+}
